@@ -63,3 +63,18 @@ h1 {
     line-height: 2;
     padding: 5px;
 }
+
+.addIcon {
+    margin: 20px auto;
+    display: table;
+    font-weight: bolder;
+    font-size: 150px;
+    border-radius: 50%;
+    width: 160px;
+    color: white;
+    background: black;
+    padding: 5px 0 5px 68px;
+}
+.addIcon:link {
+    text-decoration: none;
+}
