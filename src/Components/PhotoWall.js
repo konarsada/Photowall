@@ -9,7 +9,9 @@ class PhotoWall extends Component {
             <Link className="addIcon" to="/AddPhoto">+</Link>
 
             <div className="photo-grid">
-                {this.props.posts.map((post, index) => <Photo key={index} post={post} onRemovePhoto={this.props.onRemovePhoto} />)}
+                {this.props.posts
+                    .sort((x, y) => y.id - x.id) // descending order
+                    .map((post) => <Photo key={post.id} post={post} onRemovePhoto={this.props.onRemovePhoto} />)}
             </div>
         </div>
     }
